@@ -1,0 +1,110 @@
+﻿/* Panel principal del administrador */
+.panel-admin {
+  font-family: Arial, sans-serif; 
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #f5f5f5; 
+  border-radius: 8px; 
+}
+
+/* Encabezado del panel */
+.panel-header {
+  margin-bottom: 20px;
+}
+
+.panel-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 24px; /* Título principal */
+}
+
+/* Sub-encabezado con flexbox para separar títulos o botones */
+.panel-subheader {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los elementos */
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.blaiotitle {
+  font-weight: bold;
+  color: #333;
+}
+
+.create-title {
+  color: #666; /* Texto más apagado */
+}
+
+/* Contenedor de la tabla */
+.table-container {
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Efecto de sombra ligera */
+}
+
+/* Estilos generales de la tabla */
+.productos-table {
+  width: 100%;
+  border-collapse: collapse; /* Quita espacios entre celdas */
+}
+
+/* Encabezados de la tabla */
+.productos-table th {
+  background-color: #f8f9fa; /* Fondo gris claro */
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Celdas normales */
+.productos-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Última fila sin borde */
+.productos-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Efecto hover: resalta la fila cuando pasamos el mouse */
+.productos-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Botones de acción dentro de la tabla */
+.action-btn {
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action-btn:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Responsive: ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .panel-admin {
+    padding: 10px; 
+  }
+  
+  .productos-table {
+    font-size: 14px; /* Texto más pequeño */
+  }
+  
+  .productos-table th,
+  .productos-table td {
+    padding: 8px 10px; /* Menos espacio en celdas */
+  }
+}
